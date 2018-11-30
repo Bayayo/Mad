@@ -1,0 +1,244 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>¡Hasta Pronto!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="img/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/fonts_mad.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+</head>
+
+    <style>
+        
+        body{
+            font-family: 'muller_regular', Arial, Helvetica;
+        }
+    
+         .content {
+
+             width: 65%;
+             margin: 0 auto;
+        }
+
+        .fila1 {
+            float: left;
+            width: 40%;
+            padding-right:40px;
+        }
+
+        .fila2 {
+            padding: 2%;
+            margin-top: 4%;
+            width: 100%;
+        }
+
+
+        .imgcont {
+            position: relative;
+        }
+
+
+        img {
+            max-width: 90% !important;
+            height: auto;
+            display: block;
+        }
+
+
+         .img-left{
+             opacity:0;
+            animation: objizq 0.6s ease-in forwards;
+            animation-delay: 1s;
+        }
+
+        .img-right{
+            opacity:0;
+
+            animation: objder 0.6s ease-in forwards;
+            animation-delay: 1s;
+        }
+
+
+              .img-right  path {
+          fill: #000;
+        }
+
+
+        .conttxt {
+            max-width: 100% !important;
+            height: auto;
+            display: block;
+        }
+
+        button {
+            background-color: #4C24A2;
+            padding: 9px 15px 9px 9px;
+            margin-top: 7px;
+            cursor: pointer;
+            color: #E8BA16;
+            font-family: 'muller_regular';
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #A68EDA;
+            }
+
+        .titulo-log {
+            opacity:0;
+            font-size: 5.5vw;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            line-height: 94px;
+            font-family: 'muller_bold';
+            animation: appear 0.4s ease-in forwards;
+
+        }
+
+        .txt-log {
+            opacity:0;
+            font-size: 3.5vh;
+            margin-top: 70px;
+            font-family: 'muller_regular';
+            animation: appear 0.5s ease-in forwards;
+            animation-delay: 0.7s;
+
+        }
+
+
+        .footer-log{
+            position: fixed; 
+            bottom:0px;
+            width: 100%; 
+            height: 20%; 
+            background-color: #4C24A2;
+        }
+
+
+
+    @media screen and (max-width: 580px) {
+
+        .content {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+
+        .fila1 {
+            /* float: left; */
+            width: 100%;
+        }
+
+        .titulo-log {
+            font-size: 9.5vw;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            line-height: 94px;
+            font-family: 'muller_bold';
+        }
+
+
+        .txt-log {
+            font-size: 2vh;
+            margin-top: 5px;
+            font-family: 'muller_regular';
+        }
+
+
+        .footer-log{
+                position: fixed; 
+                bottom:0px;
+                width: 100%; 
+                height: 5%; 
+                background-color: #4C24A2;
+
+        }
+
+
+
+    }       
+
+
+
+
+    @keyframes appear {
+
+        0%{
+            opacity:0;
+        }
+
+        100%{
+            opacity:1;
+        }
+
+    }
+
+
+
+
+
+    @keyframes objizq {
+
+        0%{
+            opacity:0;
+        }
+
+        100%{
+            opacity:1;
+            padding-left: 9%;
+            fill:azure;
+        }
+
+
+    }
+
+
+    @keyframes objder {
+        0%{
+            opacity:0;
+        }
+
+        100%{
+            opacity:1;
+            padding-right: 9%;
+            fill:azure;
+        }
+
+
+    }    
+
+
+</style>
+
+
+<body>
+
+    <div class="content">
+
+        <div class="fila1">
+            <div class="imgcont">
+                <img src="img/logout/lock_1.svg" style="float: left; position: absolute;" class="img-left" />
+                <img src="img/logout/lock_2.svg" style="float: right;" class="img-right" />
+            </div>
+        </div>
+
+        <div class="fila2">
+            <div class="conttxt">
+                <div class="titulo-log">¡Hasta pronto!</div>
+                <div class="txt-log">Se cerró correctamente la sesión</div>
+               
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-log"></div>
+</body>
+</html>
