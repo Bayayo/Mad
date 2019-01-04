@@ -283,6 +283,7 @@ small i{
     float: left;
     top: 0;
     bottom: 0;
+    margin-bottom: 35px;
 }
 
 .full-box span{
